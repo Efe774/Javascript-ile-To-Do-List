@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ile Yapılacaklar Listesi</title><!--Ana Başlık kısmı-->
+    <link rel="stylesheet" href="./style.css"> <!--css bağlama noktası-->
+    
+</head>
+<body>
+
+    <div class="container"><!--container yapısı-->
+        <div class="todo-app">
+      
+            <h2>Yapılacaklar Listesi <img src="./images/icon.png" alt="icon"> </h2> <!--başlık kısmı-->
+            <div class="row"><!--row yapısı-->
+            <input type="text" id="input-box" placeholder="Yazınız"><!--input-->
+            <button class="ekle-buton" id="mybutton" onclick="addTask()">Ekle</button><!--button-->
+            </div>
+
+            <ul id="list-container"><!--kişinin yapılacaklar listesini yazacağı nokta-->
+
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script><!--JS bağlama dosyası-->
+</body>
+</html>

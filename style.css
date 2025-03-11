@@ -1,0 +1,100 @@
+*{ /*genel sayfa ayarı*/
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+.container{  /*container stil ayarları*/
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+.todo-app{ /*liste still ayarları*/
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{ /*liste başlık still ayarları*/
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{ /*liste resim still ayarları*/
+    width: 30px;
+    margin-left: 10px;
+}
+.row{ /*liste row still ayarları*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{ /*input still ayarları*/
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    outline: none;
+}
+.ekle-buton{ /*button still ayarları*/
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{ /*liste  still ayarları*/
+ list-style: none;
+ font-size: 17px;
+ padding: 12px 8px 12px 50px;
+ user-select: none;
+ cursor: pointer;
+ position: relative;
+}
+ul li::before{ /*liste öncesi still ayarları*/
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} 
+ul li.checked{ /*liste tıklandığında still ayarları*/
+    color: #555;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+ul li.checked::before{ /*liste öncesi resim still ayarları*/
+    background-image: url(./images/checked.png);
+}
+ul li span{ /*liste span still ayarları*/
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{ /*liste imleç üstüne gelince still ayarları*/
+    background: #edeef0;
+}
